@@ -1,0 +1,86 @@
+########## 1. Interchange two numbers ########
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
+
+
+############## 2. Maximum of three numbers ###########
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a >= b && a >= c) {
+        printf("Maximum = %d\n", a);
+    } else if (b >= a && b >= c) {
+        printf("Maximum = %d\n", b);
+    } else {
+        printf("Maximum = %d\n", c);
+    }
+
+    return 0;
+}
+
+######### 3. First 100 prime numbers ########
+#include <stdio.h>
+
+int main() {
+    int num = 2, count, i, printed = 0;
+
+    printf("First 100 prime numbers are:\n");
+
+    while (printed < 100) {
+        count = 0;
+
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                count = 1;
+                break;
+            }
+        }
+
+        if (count == 0) {
+            printf("%d ", num);
+            printed++;
+        }
+
+        num++;
+    }
+
+    return 0;
+}
+
+################### 4. Pattern: 1, 12, 123, 1234 ###############
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    for (i = 1; i <= 4; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

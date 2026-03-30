@@ -1,6 +1,7 @@
 ADVANCE C PROGRAMMING
 
-*1. No Arguments, No Return Value*
+
+========== 1. No Arguments, No Return Value ==========
 
 #include <stdio.h>
 
@@ -21,7 +22,7 @@ Enter two numbers: 10 20
 Sum = 30
 
 
-2. Arguments, No Return Value
+========== 2. Arguments, No Return Value ==========
 
 #include <stdio.h>
 
@@ -42,7 +43,7 @@ Enter 2 numbers: 45 25
 Sum = 70
 
 
-3. No Arguments, With Return Value
+========== 3. No Arguments, With Return Value ==========
 
 #include <stdio.h>
 
@@ -64,7 +65,7 @@ Enter two number: 78 69
 Sum = 147
 
 
-4. Arguments, With Return Value
+========== 4. Arguments, With Return Value ==========
 
 #include <stdio.h>
 

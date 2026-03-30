@@ -86,7 +86,7 @@ OUTPUT:
 Enter two numbers: 69 53
 Sum = 122
 
-========== 4. swap two numbers ==========
+========== 5. Swap two numbers ==========
 
 #include <stdio.h>
 

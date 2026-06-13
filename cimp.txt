@@ -114,3 +114,46 @@ OUTPUT:
 Enter two numbers: 10 20
 After swapping:
 a = 20, b = 10
+
+========== 6. Program Using Structure ==========
+
+#include <stdio.h>
+
+struct Student
+{
+    int rollNo;
+    char name[50];
+    float marks;
+};
+
+int main()
+{
+    struct Student s1;
+
+    printf("Enter Roll Number: ");
+    scanf("%d", &s1.rollNo);
+
+    printf("Enter Name: ");
+    scanf("%s", s1.name);
+
+    printf("Enter Marks: ");
+    scanf("%f", &s1.marks);
+
+    printf("\n--- Student Details ---\n");
+    printf("Roll Number: %d\n", s1.rollNo);
+    printf("Name: %s\n", s1.name);
+    printf("Marks: %.2f\n", s1.marks);
+
+    return 0;
+}
+
+OUTPUT:
+Enter Roll Number: 101
+Enter Name: Zaid
+Enter Marks: 85.5
+
+--- Student Details ---
+Roll Number: 101
+Name: Zaid
+Marks: 85.50
+
